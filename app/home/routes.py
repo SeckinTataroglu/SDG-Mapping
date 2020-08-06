@@ -119,29 +119,6 @@ def SDGQuery():
     yearWarningMsg = None
     universityName, yearFrom, yearTo = None, None, None
     uniChart, ukChart, citCount, collab = dict(), dict(), dict(), dict()
-    labels, values = None, None
-
-    alpha = 0.5
-    backgroundColours = [
-                    f"rgba(229, 36, 59, {alpha})",  # 1
-					f"rgba(221, 166, 58, {alpha})", # 2
-					f"rgba(76, 159, 56, {alpha})",  # 3
-					f"rgba(197, 25, 45, {alpha})",  # 4
-					f"rgba(255, 58, 33, {alpha})",  # 5
-					f"rgba(38, 189, 226, {alpha})", # 6
-					f"rgba(252, 195, 11, {alpha})", # 7
-					f"rgba(162, 25, 66, {alpha})",  # 8
-					f"rgba(253, 105, 37, {alpha})", # 9
-					f"rgba(221, 19, 103, {alpha})", # 10
-					f"rgba(253, 157, 36, {alpha})", # 11
-					f"rgba(191, 139, 46, {alpha})", # 12
-					f"rgba(63, 126, 68, {alpha})",  # 13
-					f"rgba(10, 151, 217, {alpha})", # 14
-					f"rgba(86, 192, 43, {alpha})",  # 15
-					f"rgba(0, 104, 157, {alpha})",  # 16
-					f"rgba(25, 72, 106, {alpha})",  # 17
-    ]
-
 
     if request.method == "POST":
         if request.form:
@@ -176,8 +153,8 @@ def SDGQuery():
                                                 yearFrom=yearFrom,
                                                 yearTo=yearTo,
                                                 uniValues=uniValues,
-                                                ukValues=ukValues,
-                                                backgroundColours=backgroundColours)
+                                                ukValues=ukValues
+                                                )
 
 
 
