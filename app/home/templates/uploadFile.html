@@ -1,0 +1,204 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Upload Files {% endblock %} 
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}
+body{
+	.box__dragndrop,
+	.box__uploading,
+	.box__success,
+	.box__error {
+	  display: none;
+	}
+
+	}
+{% endblock stylesheets %}
+
+{% block content %}	
+
+	<!-- [ Main Content ] start -->
+	<div class="pcoded-main-container">
+		<div class="pcoded-content">
+			<!-- [ breadcrumb ] start -->
+			<!-- <div class="page-header">
+				<div class="page-block">
+					<div class="row align-items-center">
+						<div class="col-md-12">
+							<div class="page-header-title">
+								<h5 class="m-b-10">Upload Files</h5>
+							</div>
+							<ul class="breadcrumb">
+								<li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
+								<li class="breadcrumb-item"><a href="#!">Upload Files</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<!-- [ breadcrumb ] end -->
+			<!-- [ Main Content ] start -->
+			<div class="row">
+				<!-- [ sample-page ] start -->
+				
+				<!-- <div class="col-sm-12">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="panel-content">
+								<h2 class="heading"><i class="fa fa-square"></i> Limit file type, try to upload png or pdf only</h2>
+								<input type="file" class="dropify" data-allowed-file-extensions="pdf doc docx">
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<!-- [ sample-page ] end -->
+
+				<div class="col-sm-12">
+					<h2>Upload Files</h2>
+					<hr>
+					
+					<!-- [ Explanation Section ] start -->
+					<div class="col-sm-12">
+						<div class="card">
+	
+							<div class="card-header">
+								<h5>How to Upload File(s)</h5>
+								<div class="card-header-right">
+									<div class="btn-group card-option">
+										<button type="button" class="btn dropdown-toggle btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="feather icon-more-horizontal"></i>
+										</button>
+										<ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+											<li class="dropdown-item full-card"><a href="#!"><span><i class="feather icon-maximize"></i> maximize</span><span style="display:none"><i class="feather icon-minimize"></i> Restore</span></a></li>
+											<li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i> collapse</span><span style="display:none"><i class="feather icon-plus"></i> expand</span></a></li>
+											<li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+											<li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<p>"Any explanation here"
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- [ Explanation Section ] end -->
+					
+					<hr>
+					
+					
+					<form action="/uploadFile" method="POST" enctype="multipart/form-data">
+						<div class="row">
+							<div class="col-sm-11">
+								<div class="form-group">
+									<h5>Select File(s)</h5>
+									<div class = "row">
+										
+											<div class="col-sm-10">
+												<div class="custom-file">
+													<input oninput="filesize(this);" type="file" class="custom-file-input" name="files[]" multiple=True id="documents">
+													<label class="custom-file-label" for="documents">File(s)...</label>
+												</div>
+											</div>
+											<div class="col-sm-2">
+												<button type="submit" class="btn btn-primary">Upload</button>
+											</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-8">
+							{% if msgSuccess %}
+							<div class="alert alert-success" role="alert">
+								<p>The following file(s) uploaded:</p>
+								<ul>	
+									{% for fileNames in msgSuccess %}
+										<li>{{ fileNames }}</li>
+									{% endfor %}	
+								</ul>
+								
+							</div>
+							{% endif %}
+							{% if msgDanger %}
+							<div class="alert alert-danger" role="alert">
+								{{msgDanger}}
+							</div>
+							{% endif %}
+						</div>
+					</form>
+					<hr>
+				</div> 
+			
+				<!-- <div class="col-sm-12">
+					<h1>Results</h1> <br>
+					<form action="/getFiles" method="GET" enctype="multipart/form-data">
+						<button type="Submit" class="btn btn-primary">Get Results</button>
+						<div class="card-body">
+							{% if textBody %}
+								{% for key, value in textBody.items() %}
+									<h2>File: {{key}}</h2>
+									<p>{{value}}</p>
+									<hr>
+								{% endfor %}
+							{% endif %}
+						</div>
+					</form>
+				</div> -->
+<!-- 
+				<div class="container">
+					<div class="row">
+						<div class="col">
+							<h5 class="mt-3 mb-3">Job Queue</h5>
+							{% if jobs %}
+							{% for job in jobs %}
+							<div class="card mb-3">
+								<div class="card-body">
+									<h6>{{ job.func_name }}</h6>
+									<p>Args: {{ job.args }}</p>
+									<small class="text-muted d-block">Job ID: {{ job.id }}</small>
+									<small class="text-muted d-block">Status: {{ job.status }}</small>
+
+								</div>
+							</div>
+							{% endfor %}
+							{% else %}
+							<p>No Jobs in the queue</p>
+							{% endif %}
+						</div>
+					</div>
+				</div> -->
+
+
+
+
+
+			</div>
+			<!-- [ Main Content ] end -->
+		</div>
+	</div>
+	<!-- [ Main Content ] end -->
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+
+<!-- FileSize Check JS with Cookies -->
+<!-- <script>
+
+	function filesize(elem) {
+
+		console.log(elem.files[0].size)
+
+		document.cookie = `filesize=${elem.files[0].size}`;
+	
+	}
+
+</script> -->
+
+
+{% endblock javascripts %}
