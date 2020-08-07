@@ -8,68 +8,26 @@
 {% block content %}	
 
 	<!-- [ Main Content ] start -->
-	<div class="pcoded-main-container">
+	<div class="pcoded-main-container ">
 		<div class="pcoded-content">
-			<!-- [ breadcrumb ] start -->
-			<!-- <div class="page-header">
-				<div class="page-block">
-					<div class="row align-items-center">
-						<div class="col-md-12">
-							<div class="page-header-title">
-								<h5 class="m-b-10">Research</h5>
-							</div>
-							<ul class="breadcrumb">
-								<li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
-								<li class="breadcrumb-item"><a href="#!">Research</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div> -->
-			<!-- [ breadcrumb ] end -->
+
 			<!-- [ Main Content ] start -->
 			<div class="row">
 				<!-- [ sample-page ] start -->
 				<div class="col-sm-12">
 
-						<div class="card">
-							<div class="card-header">
-								<h4><a data-toggle="collapse" href="#Instructions">Click here for Instructions...</a></h4>
-							</div>
-							<div class="collapse multi-collapse mt-2" id="Instructions">
-								<div class="card-body">
-									<p>
-										The Research Functions
-									</p>
-								</div>
-							</div>
-						</div>
-						
-						
-					<!-- <div class="card">
+					<div class="card">
 						<div class="card-header">
-							<h5>About Research</h5>
-							<div class="card-header-right">
-								<div class="btn-group card-option">
-									<button type="button" class="btn dropdown-toggle btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<i class="feather icon-more-horizontal"></i>
-									</button>
-									<ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
-										<li class="dropdown-item full-card"><a href="#!"><span><i class="feather icon-maximize"></i> maximize</span><span style="display:none"><i class="feather icon-minimize"></i> Restore</span></a></li>
-										<li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i> collapse</span><span style="display:none"><i class="feather icon-plus"></i> expand</span></a></li>
-										<li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
-										<li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
-									</ul>
-								</div>
+							<h4><a data-toggle="collapse" href="#Instructions">Click here for Instructions...</a></h4>
+						</div>
+						<div class="collapse multi-collapse mt-2" id="Instructions">
+							<div class="card-body">
+								<p>
+									The Research Functions
+								</p>
 							</div>
 						</div>
-						<div class="card-body">
-							<p>
-								The Research functions...
-							</p>
-						</div>
-					</div> -->
-
+					</div>
 				</div>
 
 
@@ -79,484 +37,380 @@
 
 				<!-- [ Graph ] start -->
 				<!-- <div class="col-sm-12"> -->
-					<h3 class="mb-3">SDG Mapping</h3>
-					<hr>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="card">
-								<div class="card-body">
-									
-									<!-- Form Starts -->
-									<form action="/SDGQuery" method="POST" enctype="multipart/form-data">
-										<div class="row form-group">
-
-											<div class="col-sm-5">
-												<label for="universitySelection">Select University:</label>
-												<!-- University List -->
-												<select class="form-control" name="universitySelection">
-													<option>Abertay University</option>
-													<option>Aberystwyth University</option>
-													<option>AECC University College</option>
-													<option>Anglia Ruskin University</option>
-													<option>Arts University Bournemouth</option>
-													<option>Aston University</option>
-													<option>Bangor University</option>
-													<option>Bath Spa University</option>
-													<option>Birkbeck University of London</option>
-													<option>Birmingham City University</option>
-													<option>Bishop Grosseteste University</option>
-													<option>Bournemouth University</option>
-													<option>Brunel University London</option>
-													<option>Buckinghamshire New University</option>
-													<option>Canterbury Christ Church University</option>
-													<option>Cardiff Metropolitan University</option>
-													<option>Cardiff University</option>
-													<option>City University of London</option>
-													<option>Conservatoire for Dance and Drama</option>
-													<option>Courtauld Institute of Art</option>
-													<option>Coventry University</option>
-													<option>Cranfield University</option>
-													<option>De Montfort University</option>
-													<option>Edge Hill University</option>
-													<option>Edinburgh Napier University</option>
-													<option>Falmouth University</option>
-													<option>Glasgow Caledonian University</option>
-													<option>Glasgow School of Art</option>
-													<option>Goldsmiths University of London</option>
-													<option>Gower College Swansea</option>
-													<option>Grŵp Llandrillo Menai</option>
-													<option>Grwp NPTC Group</option>
-													<option>Guildhall School of Music and Drama</option>
-													<option>Harper Adams University</option>
-													<option>Hartpury University</option>
-													<option>Heriot-Watt University</option>
-													<option>Imperial College London</option>
-													<option>Institute of Cancer Research</option>
-													<option>Keele University</option>
-													<option>King's College London</option>
-													<option>Kingston University</option>
-													<option>Lancaster University</option>
-													<option>Leeds Arts University</option>
-													<option>Leeds Beckett University</option>
-													<option>Leeds College of Music</option>
-													<option>Leeds Trinity University</option>
-													<option>Liverpool Hope University</option>
-													<option>Liverpool John Moores University</option>
-													<option>Liverpool School of Tropical Medicine</option>
-													<option>London Business School</option>
-													<option>London Metropolitan University</option>
-													<option>London School of Economics</option>
-													<option>London School of Hygiene and Tropical Medicine</option>
-													<option>London South Bank University</option>
-													<option>Loughborough University</option>
-													<option>Manchester Metropolitan University</option>
-													<option>Middlesex University</option>
-													<option>National Film and Television School</option>
-													<option>Newcastle University</option>
-													<option>Newman University</option>
-													<option>Northumbria University</option>
-													<option>Norwich University of the Arts</option>
-													<option>Nottingham Trent University</option>
-													<option>Open University</option>
-													<option>Oxford Brookes University</option>
-													<option>Plymouth College of Art</option>
-													<option>Queen Margaret University</option>
-													<option>Queen Mary University of London</option>
-													<option>Queen's University Belfast</option>
-													<option>Ravensbourne</option>
-													<option>Robert Gordon University</option>
-													<option>Roehampton University</option>
-													<option>Rose Bruford College</option>
-													<option>Royal Academy of Music</option>
-													<option>Royal Agricultural University</option>
-													<option>Royal Central School of Speech and Drama</option>
-													<option>Royal College of Art</option>
-													<option>Royal College of Music</option>
-													<option>Royal Conservatoire of Scotland</option>
-													<option>Royal Holloway University of London</option>
-													<option>Royal Northern College of Music</option>
-													<option>Royal Veterinary College</option>
-													<option>School of Oriental and African Studies</option>
-													<option>Sheffield Hallam University</option>
-													<option>Solent University</option>
-													<option>SRUC</option>
-													<option>St George's University of London</option>
-													<option>St Mary's University College Belfast</option>
-													<option>St Mary's University Twickenham</option>
-													<option>Staffordshire University</option>
-													<option>Stranmillis University College</option>
-													<option>Swansea University</option>
-													<option>Teesside University</option>
-													<option>The Liverpool Institute for Performing Arts</option>
-													<option>Trinity Laban Conservatoire of Music and Dance</option>
-													<option>Ulster University</option>
-													<option>University College Birmingham</option>
-													<option>University College London</option>
-													<option>University College of Osteopathy</option>
-													<option>University for the Creative Arts</option>
-													<option>University of Aberdeen</option>
-													<option>University of Bath</option>
-													<option>University of Bedfordshire</option>
-													<option>University of Birmingham</option>
-													<option>University of Bolton</option>
-													<option>University of Bradford</option>
-													<option>University of Brighton</option>
-													<option>University of Bristol</option>
-													<option>University of Buckingham</option>
-													<option>University of Cambridge</option>
-													<option>University of Central Lancashire</option>
-													<option>University of Chester</option>
-													<option>University of Chichester</option>
-													<option>University of Cumbria</option>
-													<option>University of Derby</option>
-													<option>University of Dundee</option>
-													<option>University of Durham</option>
-													<option>University of East Anglia</option>
-													<option>University of East London</option>
-													<option>University of Edinburgh</option>
-													<option>University of Essex</option>
-													<option>University of Exeter</option>
-													<option>University of Glasgow</option>
-													<option>University of Gloucestershire</option>
-													<option>University of Greenwich</option>
-													<option>University of Hertfordshire</option>
-													<option>University of Huddersfield</option>
-													<option>University of Hull</option>
-													<option>University of Kent</option>
-													<option>University of Leeds</option>
-													<option>University of Leicester</option>
-													<option>University of Lincoln</option>
-													<option>University of Liverpool</option>
-													<option>University of London</option>
-													<option>University of Manchester</option>
-													<option>University of Northampton</option>
-													<option>University of Nottingham</option>
-													<option>University of Oxford</option>
-													<option>University of Plymouth</option>
-													<option>University of Portsmouth</option>
-													<option>University of Reading</option>
-													<option>University of Salford</option>
-													<option>University of Sheffield</option>
-													<option>University of South Wales</option>
-													<option>University of Southampton</option>
-													<option>University of St Andrews</option>
-													<option>University of St Mark and St John</option>
-													<option>University of Stirling</option>
-													<option>University of Strathclyde</option>
-													<option>University of Suffolk</option>
-													<option>University of Sunderland</option>
-													<option>University of Surrey</option>
-													<option>University of Sussex</option>
-													<option>University of the Arts London</option>
-													<option>University of the Highlands and Islands</option>
-													<option>University of the West of England</option>
-													<option>University of the West of Scotland</option>
-													<option>University of Wales</option>
-													<option>University of Wales Trinity Saint David</option>
-													<option>University of Warwick</option>
-													<option>University of West London</option>
-													<option>University of Westminster</option>
-													<option>University of Winchester</option>
-													<option>University of Wolverhampton</option>
-													<option>University of Worcester</option>
-													<option>University of York</option>
-													<option>Wrexham Glyndŵr University</option>
-													<option>Writtle University College</option>
-													<option>York St John University</option>
-
-												</select>
-											</div>
-											
-											<div class="col-sm-2">
-												<label for="yearFromSelection">From:</label>
-												<!-- Year List -->
-												<select class="form-control" name="yearFromSelection" id="yearFromSelection">
-													<!-- <option>2014</option> -->
-													<option>2015</option>
-													<option>2016</option>
-													<option>2017</option>
-													<option>2018</option>
-													<option>2019</option>
-													<!-- <option>2020</option> -->
-												</select>
-											</div>
-
-											<div class="col-sm-2">
-												<label for="yearToSelection">To:</label>
-												<!-- Year List -->
-												<select class="form-control" name="yearToSelection" id="yearToSelection">
-													<!-- <option>2014</option> -->
-													<option>2015</option>
-													<option>2016</option>
-													<option>2017</option>
-													<option>2018</option>
-													<option>2019</option>
-													<!-- <option>2020</option> -->
-												</select>
-											</div>
-											
-											<div class="col-sm-2 align-self-end">
-												<button type="submit" class="btn btn-primary">Get Results</button>
-											</div>
-										</div>
-
-										<div class="col-md-8 offset-md-2">
-											{% if yearWarningMsg %}
-											<div class="alert alert-danger text-center" role="alert">
-												{{yearWarningMsg}}
-											</div>
-											{% endif %}
-										</div>
-										<!-- <div class="col-md-8 offset-md-2">
-											{% if query %}
-											<div class="alert alert-success text-center" role="alert">
-												{{query}}
-											</div>
-											{% endif %}
-										</div> -->
-
-
-
-									</form>
-									<!-- Form Ends -->
-
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					{% if ukChart %}
-					<h3 class="mb-3">Results for {{universityName}} {{yearFrom}}-{{yearTo}}</h3>
-					<hr>
-					<div class="row">
-
-
-						<!-- Uni Graph Results Start -->
-						<div class="col-md-6">
-							<div class="card">
-								<div class="card-header">
-									<h4><a data-toggle="collapse" href="#uniGraph">{{universityName}} Mapping</a></h4>
-								</div>
-								<div class="collapse multi-collapse mt-2" id="uniGraph">
-									<div class="card-body">
-										<canvas id="uniChart" width="250", height="250"></canvas>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Uni Graph Results Start -->
-
-
-						<!-- UK Graph Results Start -->
-						<div class="col-md-6">
-							<div class="card">
-								<div class="card-header">
-									<h4><a data-toggle="collapse" href="#uKGraph">United Kingdom Mapping</a></h4>
-								</div>
-								<div class="collapse multi-collapse mt-2" id="uKGraph">
-									<div class="card-body">
-										<canvas id="ukChart" width="250", height="250"></canvas>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Uni Graph Results Start -->
-						
-
-						<!-- Collaborations Results Start -->
-						<div class="col-md-12">
-							<div class="card">
-								<div class="card-header">
-									<h4><a data-toggle="collapse" href="#Collaborators">Top 10 Collaborators</a></h4>
-								</div>
-								<div class="collapse multi-collapse mt-2" id="Collaborators">
-									<div class="card-body">
-
-										<div class="card-body table-border-style">
-											<div class="table-responsive">
-												<table class="table table-hover">
-													<thead>
-														<tr>
-															<th align="left">Collaborator Name</th>
-															<th align="right">No. of Collaborated Publications</th>
-															<!-- <th>{{universityName}}</th>
-															<th>Citation Count</th> -->
-														</tr>
-													</thead>
-													<tbody>
-														{% for key, value in collab.items() %}
-														<tr>
-															<td align="left">{{key}}</td>
-															<td align="center">{{value}}</td>
-															<!-- <td>{{uniChart[key]}}</td>
-															<td>{{citCount[key]}}</td> -->
-														</tr>
-														{% endfor %}
-														
-													</tbody>
-												</table>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Collaborations Results Ends -->
-
-
-						<!-- Detailed Results Start -->
-						<div class="col-md-12">
-							<div class="card">
-								<div class="card-header">
-									<h4><a data-toggle="collapse" href="#DetailedResult">Detailed Results & Citation Counts</a></h4>
-								</div>
-								<div class="collapse multi-collapse mt-2" id="DetailedResult">
-									<div class="card-body">
-
-										<div class="card-body table-border-style">
-											<div class="table-responsive">
-												<table class="table table-hover">
-													<thead>
-														<tr align="right">
-															<th>SDG</th>
-															<th>{{universityName}}</th>
-															<th>UK Average</th>
-															<th>Citation Count</th>
-														</tr>
-													</thead>
-													<tbody>
-														{% for key, value in uniChart.items() %}
-														<tr align="right">
-															<td>{{key}}</td>
-															<td>{{value}}</td>
-															<td>{{ukChart[key]}}</td>
-															<td>{{citCount[key]}}</td>
-														</tr>
-														{% endfor %}
-														
-													</tbody>
-												</table>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Detailed Results Ends -->
-
-
-
-
-
-					</div>
-					{% endif %}
-
-
-
-
-						<!-- <div class="col-md-4"> 
-							<div class="card">
-								<a data-toggle="collapse" href="#multiCollapseExample1">
-									<div class="card-header">
-										<h4>Select a file</h4>
-									</div>
-								</a>
+				<h3 class="mb-3">SDG Mapping</h3>
+				<hr>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="card">
+							<div class="card-body">
 								
-								<div class="collapse multi-collapse mt-2" id="multiCollapseExample1">
-									<div class="card-body">
-											<div class="form-check">
-												<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-												<label class="form-check-label" for="gridRadios1">First file</label>
-											</div>
-											<div class="form-check">
-												<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-												<label class="form-check-label" for="gridRadios2">Second file</label>
-											</div>
-											<div class="form-check disabled">
-												<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
-												<label class="form-check-label" for="gridRadios3">Third file radio</label>
-											</div>
+								<!-- Form Starts -->
+								<form action="/SDGQuery" method="POST" enctype="multipart/form-data">
+									<div class="row form-group">
+
+										<div class="col-sm-5">
+											<label for="universitySelection">Select University:</label>
+											<!-- University List -->
+											<select class="form-control" name="universitySelection">
+												<option>Abertay University</option>
+												<option>Aberystwyth University</option>
+												<option>AECC University College</option>
+												<option>Anglia Ruskin University</option>
+												<option>Arts University Bournemouth</option>
+												<option>Aston University</option>
+												<option>Bangor University</option>
+												<option>Bath Spa University</option>
+												<option>Birkbeck University of London</option>
+												<option>Birmingham City University</option>
+												<option>Bishop Grosseteste University</option>
+												<option>Bournemouth University</option>
+												<option>Brunel University London</option>
+												<option>Buckinghamshire New University</option>
+												<option>Canterbury Christ Church University</option>
+												<option>Cardiff Metropolitan University</option>
+												<option>Cardiff University</option>
+												<option>City University of London</option>
+												<option>Conservatoire for Dance and Drama</option>
+												<option>Courtauld Institute of Art</option>
+												<option>Coventry University</option>
+												<option>Cranfield University</option>
+												<option>De Montfort University</option>
+												<option>Edge Hill University</option>
+												<option>Edinburgh Napier University</option>
+												<option>Falmouth University</option>
+												<option>Glasgow Caledonian University</option>
+												<option>Glasgow School of Art</option>
+												<option>Goldsmiths University of London</option>
+												<option>Gower College Swansea</option>
+												<option>Grŵp Llandrillo Menai</option>
+												<option>Grwp NPTC Group</option>
+												<option>Guildhall School of Music and Drama</option>
+												<option>Harper Adams University</option>
+												<option>Hartpury University</option>
+												<option>Heriot-Watt University</option>
+												<option>Imperial College London</option>
+												<option>Institute of Cancer Research</option>
+												<option>Keele University</option>
+												<option>King's College London</option>
+												<option>Kingston University</option>
+												<option>Lancaster University</option>
+												<option>Leeds Arts University</option>
+												<option>Leeds Beckett University</option>
+												<option>Leeds College of Music</option>
+												<option>Leeds Trinity University</option>
+												<option>Liverpool Hope University</option>
+												<option>Liverpool John Moores University</option>
+												<option>Liverpool School of Tropical Medicine</option>
+												<option>London Business School</option>
+												<option>London Metropolitan University</option>
+												<option>London School of Economics</option>
+												<option>London School of Hygiene and Tropical Medicine</option>
+												<option>London South Bank University</option>
+												<option>Loughborough University</option>
+												<option>Manchester Metropolitan University</option>
+												<option>Middlesex University</option>
+												<option>National Film and Television School</option>
+												<option>Newcastle University</option>
+												<option>Newman University</option>
+												<option>Northumbria University</option>
+												<option>Norwich University of the Arts</option>
+												<option>Nottingham Trent University</option>
+												<option>Open University</option>
+												<option>Oxford Brookes University</option>
+												<option>Plymouth College of Art</option>
+												<option>Queen Margaret University</option>
+												<option>Queen Mary University of London</option>
+												<option>Queen's University Belfast</option>
+												<option>Ravensbourne</option>
+												<option>Robert Gordon University</option>
+												<option>Roehampton University</option>
+												<option>Rose Bruford College</option>
+												<option>Royal Academy of Music</option>
+												<option>Royal Agricultural University</option>
+												<option>Royal Central School of Speech and Drama</option>
+												<option>Royal College of Art</option>
+												<option>Royal College of Music</option>
+												<option>Royal Conservatoire of Scotland</option>
+												<option>Royal Holloway University of London</option>
+												<option>Royal Northern College of Music</option>
+												<option>Royal Veterinary College</option>
+												<option>School of Oriental and African Studies</option>
+												<option>Sheffield Hallam University</option>
+												<option>Solent University</option>
+												<option>SRUC</option>
+												<option>St George's University of London</option>
+												<option>St Mary's University College Belfast</option>
+												<option>St Mary's University Twickenham</option>
+												<option>Staffordshire University</option>
+												<option>Stranmillis University College</option>
+												<option>Swansea University</option>
+												<option>Teesside University</option>
+												<option>The Liverpool Institute for Performing Arts</option>
+												<option>Trinity Laban Conservatoire of Music and Dance</option>
+												<option>Ulster University</option>
+												<option>University College Birmingham</option>
+												<option>University College London</option>
+												<option>University College of Osteopathy</option>
+												<option>University for the Creative Arts</option>
+												<option>University of Aberdeen</option>
+												<option>University of Bath</option>
+												<option>University of Bedfordshire</option>
+												<option>University of Birmingham</option>
+												<option>University of Bolton</option>
+												<option>University of Bradford</option>
+												<option>University of Brighton</option>
+												<option>University of Bristol</option>
+												<option>University of Buckingham</option>
+												<option>University of Cambridge</option>
+												<option>University of Central Lancashire</option>
+												<option>University of Chester</option>
+												<option>University of Chichester</option>
+												<option>University of Cumbria</option>
+												<option>University of Derby</option>
+												<option>University of Dundee</option>
+												<option>University of Durham</option>
+												<option>University of East Anglia</option>
+												<option>University of East London</option>
+												<option>University of Edinburgh</option>
+												<option>University of Essex</option>
+												<option>University of Exeter</option>
+												<option>University of Glasgow</option>
+												<option>University of Gloucestershire</option>
+												<option>University of Greenwich</option>
+												<option>University of Hertfordshire</option>
+												<option>University of Huddersfield</option>
+												<option>University of Hull</option>
+												<option>University of Kent</option>
+												<option>University of Leeds</option>
+												<option>University of Leicester</option>
+												<option>University of Lincoln</option>
+												<option>University of Liverpool</option>
+												<option>University of London</option>
+												<option>University of Manchester</option>
+												<option>University of Northampton</option>
+												<option>University of Nottingham</option>
+												<option>University of Oxford</option>
+												<option>University of Plymouth</option>
+												<option>University of Portsmouth</option>
+												<option>University of Reading</option>
+												<option>University of Salford</option>
+												<option>University of Sheffield</option>
+												<option>University of South Wales</option>
+												<option>University of Southampton</option>
+												<option>University of St Andrews</option>
+												<option>University of St Mark and St John</option>
+												<option>University of Stirling</option>
+												<option>University of Strathclyde</option>
+												<option>University of Suffolk</option>
+												<option>University of Sunderland</option>
+												<option>University of Surrey</option>
+												<option>University of Sussex</option>
+												<option>University of the Arts London</option>
+												<option>University of the Highlands and Islands</option>
+												<option>University of the West of England</option>
+												<option>University of the West of Scotland</option>
+												<option>University of Wales</option>
+												<option>University of Wales Trinity Saint David</option>
+												<option>University of Warwick</option>
+												<option>University of West London</option>
+												<option>University of Westminster</option>
+												<option>University of Winchester</option>
+												<option>University of Wolverhampton</option>
+												<option>University of Worcester</option>
+												<option>University of York</option>
+												<option>Wrexham Glyndŵr University</option>
+												<option>Writtle University College</option>
+												<option>York St John University</option>
+
+											</select>
+										</div>
 										
+										<div class="col-sm-2">
+											<label for="yearFromSelection">From:</label>
+											<!-- Year List -->
+											<select class="form-control" name="yearFromSelection" id="yearFromSelection">
+												<!-- <option>2014</option> -->
+												<option>2015</option>
+												<option>2016</option>
+												<option>2017</option>
+												<option>2018</option>
+												<option>2019</option>
+												<!-- <option>2020</option> -->
+											</select>
+										</div>
+
+										<div class="col-sm-2">
+											<label for="yearToSelection">To:</label>
+											<!-- Year List -->
+											<select class="form-control" name="yearToSelection" id="yearToSelection">
+												<!-- <option>2014</option> -->
+												<option>2015</option>
+												<option>2016</option>
+												<option>2017</option>
+												<option>2018</option>
+												<option>2019</option>
+												<!-- <option>2020</option> -->
+											</select>
+										</div>
+										
+										<div class="col-sm-2 align-self-end">
+											<button type="submit" class="btn btn-primary">Get Results</button>
+										</div>
 									</div>
-								</div>
-								
+
+									<div class="col-md-8 offset-md-2">
+										{% if yearWarningMsg %}
+										<div class="alert alert-danger text-center" role="alert">
+											{{yearWarningMsg}}
+										</div>
+										{% endif %}
+									</div>
+									<!-- <div class="col-md-8 offset-md-2">
+										{% if query %}
+										<div class="alert alert-success text-center" role="alert">
+											{{query}}
+										</div>
+										{% endif %}
+									</div> -->
+
+
+
+								</form>
+								<!-- Form Ends -->
+
 							</div>
-						</div> -->
-
-<!-- 
-						<div class="col-md-8">
-							<div class="card">
-								<a data-toggle="collapse" href="#multiCollapseExample2">
-									<div class="card-header">
-										<h4>Graph Results</h4>
-									</div>
-								</a>
-								<div class="collapse multi-collapse mt-2" id="multiCollapseExample2">
-									<div class="card-body">
-										<div id="bar-chart-3"></div>
-									</div>
-								</div>
-							</div>
-						</div> -->
-
-						
-						<!-- <div class="col-sm-12">
-							<h1>Results</h1> <br>
-							<form action="/researchSDG" method="GET" enctype="multipart/form-data">
-								<button type="Submit" class="btn btn-primary">Get Research</button>
-								<div class="card-body">
-									{% if ResearchSDGResults %}
-										<h4>{{ fileNameParsed }}</h4>
-										{% for sdg, keywords in ResearchSDGResults.items() %}
-											<h6>{{ sdg }} : {{ keywords }}</h6>
-											
-										{% endfor %}
-									{% endif %}
-									
-								</div>
-							</form>
-						</div> -->
-
-
-
-					<!-- </div> -->
+						</div>
+					</div>
+				</div>
 					
-				<!-- </div> -->
-				<!-- [ Graph ] end -->
+				{% if ukChart %}
+				<h3 class="mb-3">Results for {{universityName}} {{yearFrom}}-{{yearTo}}</h3>
+				<hr>
+				<div class="row">
+
+
+					<!-- Uni Graph Results Start -->
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header">
+								<h4><a data-toggle="collapse" href="#uniGraph">{{universityName}} Mapping</a></h4>
+							</div>
+							<div class="collapse multi-collapse mt-2" id="uniGraph">
+								<div class="card-body">
+									<canvas id="uniChart" width="250", height="250"></canvas>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Uni Graph Results Start -->
+
+
+					<!-- UK Graph Results Start -->
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header">
+								<h4><a data-toggle="collapse" href="#uKGraph">United Kingdom Mapping</a></h4>
+							</div>
+							<div class="collapse multi-collapse mt-2" id="uKGraph">
+								<div class="card-body">
+									<canvas id="ukChart" width="250", height="250"></canvas>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Uni Graph Results Start -->
+					
+
+					<!-- Collaborations Results Start -->
+					<div class="col-md-12">
+						<div class="card">
+							<div class="card-header">
+								<h4><a data-toggle="collapse" href="#Collaborators">Top 10 Collaborators</a></h4>
+							</div>
+							<div class="collapse multi-collapse mt-2" id="Collaborators">
+								<div class="card-body">
+
+									<div class="card-body table-border-style">
+										<div class="table-responsive">
+											<table class="table table-hover">
+												<thead>
+													<tr>
+														<th align="left">Collaborator Name</th>
+														<th align="right">No. of Collaborated Publications</th>
+														<!-- <th>{{universityName}}</th>
+														<th>Citation Count</th> -->
+													</tr>
+												</thead>
+												<tbody>
+													{% for key, value in collab.items() %}
+													<tr>
+														<td align="left">{{key}}</td>
+														<td align="center">{{value}}</td>
+														<!-- <td>{{uniChart[key]}}</td>
+														<td>{{citCount[key]}}</td> -->
+													</tr>
+													{% endfor %}
+													
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Collaborations Results Ends -->
+
+
+					<!-- Detailed Results Start -->
+					<div class="col-md-12">
+						<div class="card">
+							<div class="card-header">
+								<h4><a data-toggle="collapse" href="#DetailedResult">Detailed Results & Citation Counts</a></h4>
+							</div>
+							<div class="collapse multi-collapse mt-2" id="DetailedResult">
+								<div class="card-body">
+
+									<div class="card-body table-border-style">
+										<div class="table-responsive">
+											<table class="table table-hover">
+												<thead>
+													<tr align="right">
+														<th>SDG</th>
+														<th>{{universityName}}</th>
+														<th>UK Average</th>
+														<th>Citation Count</th>
+													</tr>
+												</thead>
+												<tbody>
+													{% for key, value in uniChart.items() %}
+													<tr align="right">
+														<td>{{key}}</td>
+														<td>{{value}}</td>
+														<td>{{ukChart[key]}}</td>
+														<td>{{citCount[key]}}</td>
+													</tr>
+													{% endfor %}
+													
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Detailed Results Ends -->
+
+
+				</div>
+				{% endif %}
 
 			</div>
 			<!-- [ Main Content ] end -->
 		</div>
 	</div>
 	<!-- [ Main Content ] end -->
-
-
-
-
-<!-- <script>
-	let testChart = document.getElementById("testChart").getContext("2d");
-
-	let massPopChart = new Chart(testChart, {
-		type: "polarArea", // bar, horizontalBar, pie, line, doughnut, radar, polarArea
-		data: {
-			labels: ["Boston", "Worcester", "Springfield", "Lowell", "Cambridge", "New Bedford"],
-			datasets: [{
-				label: "Population",
-				data: [
-						617594,
-						181045,
-						153060,
-						106519,
-						105162,
-						95072
-
-				]
-			}]
-		},
-		options: {}
-	});
-</script> -->
-
 
 
 
@@ -611,7 +465,7 @@
 					"rgba(25, 72, 106, 1)",  // 17
 				],
 				borderWidth: 1
-			}]
+			}],
 		},
 		options: {
 			// scales: {
